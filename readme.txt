@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: twodayslate
 Donate link: http://zac.gorak.us
-Tags: categories
+Tags: categories, widget, sidebar
 Requires at least: 4.0
 Tested up to: 4.2
 Stable tag: 4.2
