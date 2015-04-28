@@ -34,7 +34,7 @@ You can set the max number of categories to show, the title, and the date.
 
 == Screenshots ==
 
-1. screenshot/screenshot.png
+1. screenshot-1.png widget shown in sidebar of Twenty Fifteen
 
 == Changelog ==
 
