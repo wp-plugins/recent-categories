@@ -29,7 +29,7 @@ Enable the widget in the sidebar
 1. Upload `widget.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Place `<?php the_widget('Recent_Categories_Widget'); ?>` in your templates
-4. Or add the widget to your dynamic sidebar in the dashboard. 
+4. Or add the widget to your dynamic sidebar in the dashboard (Appearance -> Widgets).
 
 == Frequently Asked Questions ==
 
@@ -38,7 +38,7 @@ Enable the widget in the sidebar
 You can set the max number of categories to show, the title, and the date.
 
 = How can I contribute? =
-Feel free to submit an issue or a pull-request on [GitHub](https://github.com/twodayslate/Recent-Categories-Widget)
+Feel free to submit an issue or a pull-request on [GitHub](https://github.com/twodayslate/Recent-Categories-Widget).
 
 = What is the best way to contac you? =
 Check out [my website](http://zac.gorak.us) for a list of ways to do just that!
