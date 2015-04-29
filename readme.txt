@@ -37,6 +37,12 @@ Enable the widget in the sidebar
 
 You can set the max number of categories to show, the title, and the date.
 
+= How can I contribute? =
+Feel free to submit an issue or a pull-request on [GitHub](https://github.com/twodayslate/Recent-Categories-Widget)
+
+= What is the best way to contac you? =
+Check out [my website](http://zac.gorak.us) for a list of ways to do just that!
+
 == Screenshots ==
 
 1. screenshot-1.png widget shown in sidebar of Twenty Fifteen
