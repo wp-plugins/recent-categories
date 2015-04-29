@@ -28,7 +28,7 @@ Enable the widget in the sidebar
 
 1. Upload `widget.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Place `<?php the widget('plugin_name_hook'); ?>` in your templates
+3. Place `<?php the_widget('plugin_name_hook'); ?>` in your templates
 4. Or add the widget to your dynamic sidebar in the dashboard. 
 
 == Frequently Asked Questions ==
