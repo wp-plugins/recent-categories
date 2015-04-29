@@ -14,17 +14,22 @@ Show your site's most recent categories!
 
 Widget to display your site's most recent categories. 
 
+Current options:
+
+ * Max number of categories to display
+ * Title
+ * Display date
+
 GitHub: https://github.com/twodayslate/Recent-Categories-Widget
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
+Enable the widget in the sidebar
 
 1. Upload `widget.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Place `<?php the widget('plugin_name_hook'); ?>` in your templates
+4. Or add the widget to your dynamic sidebar in the dashboard. 
 
 == Frequently Asked Questions ==
 
