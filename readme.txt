@@ -19,6 +19,7 @@ Current options:
  * Max number of categories to display
  * Title
  * Display date
+ * Icon (if set by [Simple Cateogry Icon](https://wordpress.org/plugins/simple-category-icons/))
 
 GitHub: https://github.com/twodayslate/Recent-Categories-Widget
 
@@ -35,7 +36,7 @@ Enable the widget in the sidebar
 
 = What options are there? =
 
-You can set the max number of categories to show, the title, and the date.
+You can set the max number of categories to show, the title, display icon, and the date.
 
 = How can I contribute? =
 Feel free to submit an issue or a pull-request on [GitHub](https://github.com/twodayslate/Recent-Categories-Widget).
@@ -52,7 +53,13 @@ Check out [my website](http://zac.gorak.us) for a list of ways to do just that!
 = 1.0 =
 * Initial Release
 
+= 1.1 =
+* Added support for [Simple Cateogry Icon](https://wordpress.org/plugins/simple-category-icons/)
+
 == Upgrade Notice == 
 
 = 1.0 =
 First release. 
+
+= 1.1 = 
+If you want icon support it is recommended that you upgrade. 

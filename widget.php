@@ -4,7 +4,7 @@ Plugin Name: Recent Categories
 Plugin URI: http://zac.gorak.us
 Description: Recent Categories
 Author: @twodayslate
-Version: 1.0
+Version: 1.1
 Author URI: http://zac.gorak.us
 */
 
@@ -18,7 +18,7 @@ add_action( 'widgets_init', function(){
 });	
 
 /**
- * Adds Recent_Categories_Widget widget.
+ * Adds My_Widget widget.
  */
 class Recent_Categories_Widget extends WP_Widget {
 
@@ -66,6 +66,9 @@ class Recent_Categories_Widget extends WP_Widget {
 		if ( isset( $instance[ 'display_date' ] ) ) {
 			$display_date = $instance[ 'display_date' ] ? true : false;
 		}
+		if ( isset( $instance[ 'display_icon' ] ) ) {
+			$display_icon = $instance[ 'display_icon' ] ? true : false;
+		}
 		
 		//if ( array_key_exists('before_widget', $args) ) echo $args['before_widget'];
 
@@ -93,7 +96,15 @@ class Recent_Categories_Widget extends WP_Widget {
 	    	$categories = get_the_category($apost->ID);
 			foreach ($categories as $acategory) {
 				if(!in_array($acategory->cat_ID, $listed_categories)){
-					echo '<li><a href="'.get_category_link($acategory->cat_ID).'">'.$acategory->cat_name.'</a>';
+					echo '<li class="cat-item cat-item-'.$acategory->cat_ID.'">';
+					echo '<a href="'.get_category_link($acategory->cat_ID).'">';
+					if($display_icon) {
+						if (function_exists('the_icon')) {
+							echo the_icon(array('size' => 'small',
+                  			'class' => 'icon'), $term_type = 'category',$id = $acategory->cat_ID, $use_term_id = null);
+						}
+					}
+					echo $acategory->cat_name.'</a>';
 					if($display_date) {
 						echo '<span class="post-date">'.get_the_date(get_option('date_format'),$apost->ID).'</span>';
 					}
@@ -148,6 +159,10 @@ class Recent_Categories_Widget extends WP_Widget {
 			<input id="<?php echo $this->get_field_id( 'display_date' ); ?>" name="<?php echo $this->get_field_name( 'display_date' ); ?>" type="checkbox" <?php checked($instance['display_date'], 'on'); ?> />
 			<label for="<?php echo $this->get_field_id( 'display_date' ); ?>"><?php _e( 'Display category date?' ); ?></label>
 		</p>
+		<p>
+			<input id="<?php echo $this->get_field_id( 'display_icon' ); ?>" name="<?php echo $this->get_field_name( 'display_icon' ); ?>" type="checkbox" <?php checked($instance['display_icon'], 'on'); ?> />
+			<label for="<?php echo $this->get_field_id( 'display_icon' ); ?>"><?php _e( 'Display category icon?' ); ?></label>
+		</p>
 
 		<?php 
 	}
@@ -168,8 +183,9 @@ class Recent_Categories_Widget extends WP_Widget {
 		$instance['max_count'] = ( ! empty( $new_instance['max_count'] ) ) ? strip_tags( $new_instance['max_count'] ) : 5;
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 		$instance['display_date'] = $new_instance['display_date'] ;
+		$instance['display_icon'] = $new_instance['display_icon'] ;
 
 		return $instance;
 	}
 
-} // class Recent_Categories_Widget
+} // class My_Widget
