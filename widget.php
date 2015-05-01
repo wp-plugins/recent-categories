@@ -159,10 +159,12 @@ class Recent_Categories_Widget extends WP_Widget {
 			<input id="<?php echo $this->get_field_id( 'display_date' ); ?>" name="<?php echo $this->get_field_name( 'display_date' ); ?>" type="checkbox" <?php checked($instance['display_date'], 'on'); ?> />
 			<label for="<?php echo $this->get_field_id( 'display_date' ); ?>"><?php _e( 'Display category date?' ); ?></label>
 		</p>
+		<?php if (function_exists('the_icon')) { ?>
 		<p>
 			<input id="<?php echo $this->get_field_id( 'display_icon' ); ?>" name="<?php echo $this->get_field_name( 'display_icon' ); ?>" type="checkbox" <?php checked($instance['display_icon'], 'on'); ?> />
 			<label for="<?php echo $this->get_field_id( 'display_icon' ); ?>"><?php _e( 'Display category icon?' ); ?></label>
 		</p>
+		<?php } ?>
 
 		<?php 
 	}
