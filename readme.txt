@@ -20,6 +20,7 @@ Current options:
  * Title
  * Display date
  * Icon (if set by [Simple Cateogry Icon](https://wordpress.org/plugins/simple-category-icons/))
+ * Display post count
 
 GitHub: https://github.com/twodayslate/Recent-Categories-Widget
 
@@ -56,6 +57,10 @@ Check out [my website](http://zac.gorak.us) for a list of ways to do just that!
 = 1.1 =
 * Added support for [Simple Cateogry Icon](https://wordpress.org/plugins/simple-category-icons/)
 
+= 1.2 =
+* Rewrite
+* Added post count option
+
 == Upgrade Notice == 
 
 = 1.0 =
@@ -63,3 +68,6 @@ First release.
 
 = 1.1 = 
 If you want icon support it is recommended that you upgrade. 
+
+= 1.2 =
+Rewrite to add post count option
